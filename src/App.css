@@ -1,38 +1,243 @@
-.App {
+html {
+  scroll-behavior: smooth;
+}
+
+/* .test {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+} */
+
+#projects {
+  padding-top: 50px;
+}
+
+#contact {
+  padding-top: 25px;
+}
+
+.contact-header {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.blurb-text {
+  font-size: 2em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.type-effect {
+  color: white;
+  font-size: 4em;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.splash-landing {
+  background-image: url("./mpls-dusk.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-img-overlay {
+  /* background-color: red; */
+}
+
+blockquote {
+  color: white;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+}
+
+.navy {
+  background-color: navy;
+}
+
+.project-header {
+  font-size: 4rem;
+}
+
+.projects {
+  height: 100%;
+}
+
+.handshake {
+  background-image: url("./handshake.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  background-color: black;
+  width: 100%;
+  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.5);
+}
+
+@media screen and (max-width: 768px) {
+  .type-effect {
+    font-size: 2.5rem;
+    width: 100%;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+@media only screen and (max-width: 640px) {
+  .type-effect {
+    font-size: 2em;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .type-effect {
+    font-size: 2em;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .type-effect {
+    font-size: 1.5em;
+    margin: 0 auto !important;
+  }
+}
+
+.footer {
+  background: linear-gradient(349deg, #020733, #6280cc);
+}
+
+.fab {
+  font-size: 3rem;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.far {
+  color: white;
+  font-size: .8rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.last-name {
+  color: red;
+}
+
+.project-btn {
+  background: linear-gradient(349deg, #020733, #6280cc);
+  color: white;
+  margin: .5em;
+}
+
+.submit-button {
+  background: linear-gradient(349deg, #020733, #6280cc);
+  min-width: 25%;
+  margin: 25px 0;
+}
+
+.about-row {
+  height: 78vh;
+  display: flex;
+  align-items: center;
+}
+
+.about-image {
+  background-image: url("./laptop.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 55vh;
+  margin: 0 auto;
+  
+}
+
+.about-text {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.about-text p {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 0 70px;
+  line-height: 2.2rem;
+}
+
+@media screen and (max-width: 911px) {
+  .about-text p {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 0;
+  line-height: 2.2rem;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+.project-link, .contact-link {
+  color: rgba(0,0,0,.5);
+  font-weight: 400;
+}
+
+.project-link:hover, .contact-link:hover {
+  text-decoration: none;
+  color: #212529;
+}
+
+.image-container {
+  background-color: black;
+  height: 400px;
+  width: 400px;
+}
+
+/* .layer:hover {
+  border: 1px solid red;
+  background-color: rgba(0,0,0,.5);
+  width: 50%;
+} */
+
+.fa-chevron-up {
+  font-size: 3rem;
+  color: white;
+  padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  #tech-section {
+    display: none;
+  }
+}
+
+#project-link, #github-link {
+  text-decoration: none;
+  color: white;
+}
+
+.fa-chevron-down {
+  color: white;
+  font-size: 4rem;
+  /* margin-top: 50px; */
+  text-align: center;
+  animation-name: pointer;
+  animation-duration: 1s;
+  position: relative;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-delay: 2.5s;
+}
+
+@keyframes pointer {
+  0% {top: 0px; opacity: 0}
+  100% {top: 50px; opacity: 1}
+}
+
+@media only screen and (max-height: 375px) {
+  @keyframes pointer {
+    0% {top: -50px; opacity: 0}
+    100% {top: 0px; opacity: 1}
   }
 }

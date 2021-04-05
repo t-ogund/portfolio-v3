@@ -1,25 +1,51 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Navbar, NavbarBrand } from 'reactstrap';
+import Navbar_Component from './Navbar';
+import Blurb from './Blurb';
+import Card from './Card';
+import Splash from './Splash';
+import Projects from './Projects';
+import { Contact, Form_Component } from './Contact';
+import Footer from './Footer';
+import AboutComponent from './AboutComponent';
+import Home from "./Home";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+import './App.css';
+import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
+
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    return(
+        <React.Fragment>
+          
+            {/* <Route exact path="/"><Navbar_Component /></Route>
+            
+            
+            <Splash />
+            
+            <Projects />
+            <Contact /> */}
+            
+
+            {/* <Form_Component /> */}
+            {/* <Footer /> */}
+            <Switch>
+            <Route exact path="/"><Home/></Route>
+            <Route path="/about"><AboutComponent /></Route>
+            
+            </Switch>
+              
+            
+        </React.Fragment>
+    )
+  }
 }
 
 export default App;
+
+
