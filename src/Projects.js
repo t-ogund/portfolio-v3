@@ -60,7 +60,7 @@ class Projects extends React.Component {
                             projectViewer="Viewed Project" category="Viewed Project" action="Clicked E-Commerce Store" label="E-Commerce"/>
                         </div>
                         <div className="col-lg-4 mb-3 d-flex justify-content-center">
-                            <Card title="Travel Brochure Website" tech="Built with HTML, CSS, and JavaScript" image="./travel-landing.JPG"
+                            <Card title="Travel Brochure Website" tech="Built with HTML, CSS, and JavaScript" image="./travel-landing.jpg"
                             link="https://t-ogund.github.io/travel-brochure/" github="https://github.com/t-ogund/travel-brochure"
                             category="Viewed Project" action="Clicked Restaurant Website" label="Restaurant"/>
                         </div>
