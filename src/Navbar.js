@@ -32,20 +32,20 @@ function Navbar_Component(props) {
         <Collapse isOpen={!collapsed} navbar>
           <Nav navbar>
                 <NavItem>
-                  <NavLink href="/" tag={Link} to="/" style={{marginLeft: "5px"}}>
+                  <NavLink className="nav-position" href="/" tag={Link} to="/" style={{marginLeft: "5px"}}>
                    Home <span class="sr-only">(current)</span>
                   </NavLink>
                 </NavItem>
 
-                <NavItem style={{display: "flex", alignItems: "center"}}>
+                <NavItem style={{display: "flex", alignItems: "center", justifyContent: "center"}}>
                   <HLink className="project-link" tag={Link} to="/#projects" style={{marginLeft: "5px"}}>Projects</HLink> 
                 </NavItem>
 
                 <NavItem>
-                  <NavLink tag={Link} to="/about" style={{marginLeft: "5px"}}>About</NavLink>
+                  <NavLink className="nav-position" tag={Link} to="/about" style={{marginLeft: "5px"}}>About</NavLink>
                 </NavItem>
 
-                <NavItem style={{display: "flex", alignItems: "center"}}>
+                <NavItem style={{display: "flex", alignItems: "center", justifyContent: "center"}}>
                   <HLink className="contact-link" tag={Link} to="/#contact" style={{marginLeft: "5px"}}>Contact</HLink>
                 </NavItem>
           </Nav>
