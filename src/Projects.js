@@ -66,7 +66,7 @@ class Projects extends React.Component {
                         <div className="col-lg-4 mb-3 d-flex justify-content-center">
                             <Card title="Travel Brochure Website" tech="Built with HTML, CSS, and JavaScript" image="./travel-landing.jpg"
                             link="https://t-ogund.github.io/travel-brochure/" github="https://github.com/t-ogund/travel-brochure"
-                            category="Viewed Project" action="Clicked Restaurant Website" label="Restaurant"/>
+                            category="Viewed Project" action="Clicked Travel Brochure" label="Travel Brochure"/>
                         </div>
                         <div className="col-lg-4 mb-3 d-flex justify-content-center">
                             <Card title="Restaurant Website" tech="Modern site built with Bootstrap and JavaScript" image="./restaurant-site.JPG"
